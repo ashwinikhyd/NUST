@@ -1,6 +1,6 @@
 
 
-# Analysis of Unevenly Sampled Data with the Non-Uniform S-Transform (NUST)
+# Time-Frequency Analysis of unevenly sampled Data with the Non-Uniform S-Transform (NUST)
 This repository contains the Python code and Jupyter notebooks used to develop, test, and validate the Non-Uniform S-Transform (NUST), a time-frequency analysis method for unevenly sampled data. The work here formed the basis of a submission to the ICASSP-2026 conference.
 
 ## What's the Problem?
