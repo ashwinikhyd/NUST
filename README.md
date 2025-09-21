@@ -1,12 +1,12 @@
 
 
-Analysis of Unevenly Sampled Data with the Non-Uniform S-Transform (NUST)
+# Analysis of Unevenly Sampled Data with the Non-Uniform S-Transform (NUST)
 This repository contains the Python code and Jupyter notebooks used to develop, test, and validate the Non-Uniform S-Transform (NUST), a time-frequency analysis method for unevenly sampled data. The work here formed the basis of a submission to the ICASSP-2026 conference.
 
-What's the Problem?
+## What's the Problem?
 In many real-world fields like astronomy, seismology, or biomedical engineering, we can't always collect data at perfect, regular intervals. This creates unevenly sampled time series, which can be a big problem for traditional signal processing tools like the Fourier Transform. These tools often require interpolation (guessing the missing data), which can create errors, or they use methods that don't make full use of the information we have.
 
-What is NUST?
+## What is NUST?
 The Non-Uniform S-Transform (NUST) is a method designed to solve this problem. It creates a time-frequency map (a spectrogram) that shows you what frequencies are present in your signal and when they appear, working directly on the unevenly sampled points without any interpolation.
 
 The key feature of NUST is its doubly adaptive window. 
@@ -14,7 +14,7 @@ It adapts to Frequency: It uses a narrow time window to get a clear picture of h
 
 It adapts to Data Density: This is the special part. The window automatically gets wider in parts of your timeline where you have very few data points (to gather more evidence) and narrower where you have lots of data points (to get a more detailed view).
 
-About This Repository
+# About This Repository
 This repository is organized into two main parts, each in its own Jupyter notebook:
 
 NUST_implementation.ipynb: This is the main development notebook. It contains:
