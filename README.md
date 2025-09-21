@@ -16,25 +16,13 @@ It adapts to Data Density: This is the special part. The window automatically ge
 
 # About This Repository
 This repository is organized into two main parts, each in its own Jupyter notebook:
+**NUST_implementation.ipynb:** This is the main development notebook. It contains:
+The core implementation of the NUST algorithm and all its helper functions. A wide range of synthetic signal generators used to create challenging test cases (transients, chirps, bursts, etc.). Detailed experiments comparing NUST to the S-Transform and the Generalized Lomb-Scargle (GLS) periodogram. Visualizations explaining the NUST hyperparameters (alpha, gamma, h) and robustness tests.
+**HD1080.ipynb:** This notebook shows a real-world application of NUST. It contains:
+The code to load and prepare public radial velocity (RV) data for the exoplanet system HD 10180. A comparison of the GLS periodogram and the NUST spectrogram on this complex, real-world dataset.
 
-NUST_implementation.ipynb: This is the main development notebook. It contains:
-
-The core implementation of the NUST algorithm and all its helper functions.
-
-A wide range of synthetic signal generators used to create challenging test cases (transients, chirps, bursts, etc.).
-
-Detailed experiments comparing NUST to the S-Transform and the Generalized Lomb-Scargle (GLS) periodogram.
-
-Visualizations explaining the NUST hyperparameters (alpha, gamma, h) and robustness tests.
-
-HD1080.ipynb: This notebook shows a real-world application of NUST. It contains:
-
-The code to load and prepare public radial velocity (RV) data for the exoplanet system HD 10180.
-
-A comparison of the GLS periodogram and the NUST spectrogram on this complex, real-world dataset.
-
-How to Use This Code
-Prerequisites
+## How to Use This Code
+**Prerequisites**
 You'll need Python 3 and a few common scientific libraries. You can install all the necessary packages by running:
 
 pip install numpy pandas matplotlib scipy scikit-learn astropy stockwell
@@ -44,10 +32,10 @@ Clone the Repository:
 
 git clone <your-repo-url>
 
-Add Data: For the HD10180.ipynb notebook, make sure you have the HD_10180_data.csv file in the same directory.
+**Add Data:** For the HD10180.ipynb notebook, make sure you have the HD_10180_data.csv file in the same directory.
 
 Launch Jupyter: Open a terminal, navigate to the project folder, and run:
 
 jupyter notebook
 
-Run the Notebooks: Open either .ipynb file and run the cells one by one. The code is commented to explain what's happening at each step. The scripts will generate and display all the figures directly in the notebook.
+**Run the Notebooks:** Open either .ipynb file and run the cells one by one. The code is commented to explain what's happening at each step. The scripts will generate and display all the figures directly in the notebook.
