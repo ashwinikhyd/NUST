@@ -14,15 +14,17 @@ It adapts to Frequency: It uses a narrow time window to get a clear picture of h
 
 It adapts to Data Density: This is the special part. The window automatically gets wider in parts of your timeline where you have very few data points (to gather more evidence) and narrower where you have lots of data points (to get a more detailed view).
 
+# About this Repository
+
 This repository is organized into two main parts, each in its own Jupyter notebook:
 
-1. NUST_implementation.ipynb: This is the main development notebook. It contains:
+1. **NUST_implementation.ipynb:** This is the main development notebook. It contains:
 - The core implementation of the NUST algorithm and all its helper functions.
 - A wide range of synthetic signal generators used to create challenging test cases (transients, chirps, bursts, etc.).
 - Detailed experiments comparing NUST to the S-Transform and the Generalized Lomb-Scargle (GLS) periodogram.
 - Visualizations explaining the NUST hyperparameters (alpha, gamma, h) and robustness tests.
 
-1. HD1080.ipynb: This notebook shows a real-world application of NUST. It contains:
+2. **HD1080.ipynb:** This notebook shows a real-world application of NUST. It contains:
 - The code to load and prepare public radial velocity (RV) data for the exoplanet system HD 10180.
 - A comparison of the GLS periodogram and the NUST spectrogram on this complex, real-world dataset.
 
@@ -33,11 +35,11 @@ This repository is organized into two main parts, each in its own Jupyter notebo
 
 ### Running the Analysis
 1. Clone the Repository:
-> git clone
+> git clone https://github.com/ashwinikhyd/NUST.git
 
-1. Add Data: For the HD10180.ipynb notebook, make sure you have the HD_10180_data.csv file in the same directory.
+2. Add Data: For the HD10180.ipynb notebook, make sure you have the HD_10180_data.csv file in the same directory.
 
-1. Launch Jupyter: Open a terminal, navigate to the project folder, and run:
+3. Launch Jupyter: Open a terminal, navigate to the project folder, and run:
 > jupyter notebook
 
 1. Run the Notebooks: Open either .ipynb file and run the cells one by one. The code is commented to explain what's happening at each step. The scripts will generate and display all the figures directly in the notebook.
